@@ -67,7 +67,7 @@ class User implements JsonSerializable
         $this->name = $name;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return array_filter([
             "id"    => $this->getId(),
